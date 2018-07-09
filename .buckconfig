@@ -1,0 +1,3 @@
+[repositories]
+  cells.utils = cells/utils
+  cells.main = cells/main

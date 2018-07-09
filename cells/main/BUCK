@@ -1,0 +1,11 @@
+load('cells.utils//:DEFS', 'FOO')
+
+print(FOO + " from main")
+
+genrule(
+  name = 'main',
+  out = 'main',
+  srcs = [],
+  cmd = 'echo 1 >> $OUT',
+  visibility= ['PUBLIC']
+)
